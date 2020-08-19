@@ -54,9 +54,11 @@ router.get("/s1", async (ctx, next) => {
         id: 1
       }
     })
+    console.log(1,res);
     ctx.body = {
-      data: res,
+      data: res.dataValues
     };
+    console.log(2, res);
     
 });
 
